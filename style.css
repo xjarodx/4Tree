@@ -41,10 +41,10 @@ body, html {
     stroke: rgb(255,255,255);
   }
   
-  /*#navbar svg2 {
-    stroke: rgb(0,0,0);
-  }*/
-  
+  #navbar img {
+      background-image: "/4Tree/assets/Logo_1_wht.png";
+  }
+
   .sticky {
       position: fixed;
       top: 0;
@@ -101,6 +101,7 @@ body, html {
      border-width: 1px;
   } 
   
+
   .hero-image {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://via.placeholder.com/1920x500");
     height: 700px;
@@ -246,18 +247,21 @@ body, html {
   }
   
   .footer p {
-    text-align: left;
-    vertical-align: center;
-    display: inline-block;
-    padding: 1em;
+    float: left;
+    display: block;
+    padding: 0 10%;
     color: rgb(0,0,0);
+    z-index: 0;
   }
   
-  .footer a img{ 
-    display: inline-block;
-    position: relative;
-    padding: 1em;
+  .footer img.center{ 
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     height: 100%;
+    padding: 1em;
+    z-index: 1;
   }
   
   
