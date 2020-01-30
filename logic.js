@@ -1,33 +1,34 @@
 window.onscroll = function() {
     stickyNav();
-   // darkNav();
+    logoChange();
   }
+
   // Get the navbar
   var navbar = document.getElementById("navbar");
+
+  var menuIco = document.getElementById("menIco");
   
   // Get the offset position of the navbar
   var sticky = navbar.offsetTop;
-
-  var logos = navbar.offsetTop > 500;
-  
+ 
   function stickyNav() {
     if (window.pageYOffset >= sticky) {
       navbar.classList.add("sticky");
     } else {
       navbar.classList.remove("sticky");
-    }
-  } 
+      }
+    } 
 
-  function logoChange() {
-    if (window.pageYOffset >= logos) {
-      navbar.classList.remove("logo1").add("logo2");
-    } else {
-      navbar.classList.remove("logo2").add("logo1");
+  function logoChange(){  
+    if (window.pageYOffset >= 300 && menuIco.classList.contains("lines")) {
+      menuIco.classList.replace("lines", "lines2");
+    } else if (window.pageYOffset <= 300 && menuIco.classList.contains("lines2")) {
+      menuIco.classList.replace("lines2", "lines");
     }
   }
     
   function openSlideMenu(){
-      document.getElementById('side-menu').style.width = '25em';
+      document.getElementById('side-menu').style.width = '15%';
       //Moves the Main element left when slide menu is opened
   }
   
@@ -37,3 +38,4 @@ window.onscroll = function() {
   }
 
   document.body.addEventListener('click', closeSlideMenu, true); 
+
