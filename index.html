@@ -1,103 +1,93 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris viverra in tellus eget eleifend. Integer et turpis non lectus aliquam venenatis et a nisi. Nam ultrices convallis sollicitudin. Donec nec eros nisi. Fusce maximus porttitor neque. Praesent vehicula, nisi sed varius mollis, neque ex auctor odio, eu mollis mauris mauris quis augue. Phasellus pretium elit vitae gravida tincidunt. Ut tincidunt diam sed tempus egestas. In vel venenatis nibh, at posuere felis.">
-    <title>Lorem Ipsum</title>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
 
-  </head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <div class="nav" id="navbar">
+        <div class="navLogo">
+          <svg id="logoMain" class="iniLogo" viewBox="0 0 146.74 135"><title>Logo_Main_blk</title><polygon points="0 73.97 63.95 73.97 64.07 56.48 36.07 56.48 67.84 0 45.38 0 0 73.97"/><polygon points="94.99 73.97 94.99 135 75.23 135 75.23 0 95.28 0 124.47 20.16 101.85 20.16 134.79 43.94 106.65 43.94 146.74 73.97 94.99 73.97"/></svg>
+        </div>
+        <div class="nav-space"></div>
+        <div class="nav-menu">
+          <span class = "open-slide">
+            <a href="#/" onclick="openSlideMenu()">
+             <svg id="menIco" class="lines">
+              <path d="M0,5 30,5" stroke-width="5"/>
+              <path d="M0,14 30,14" stroke-width="5"/>
+              <path d="M0,23 30,23" stroke-width="5"/>
+              </svg> 
+           </span>
+            
+            <div id="side-menu" class = "side-nav">
+            <a href="#/" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+            <a href="#">Home</a>
+            <hr>
+            <a href="#">Products</a>
+              <hr>
+            <a href="#">Gallery</a>
+        </div> 
+            
+        </div>
+      </div>
+      
+        <div class="header">
+          <div class="hero-image">
+            <div class="hero-text">
+              <h1>Test</h1>
+            </div>
+          </div>
+        </div>
   
-  <body>
-    
-    <div id="navbar">
-      <span class = "open-slide">
-        <a href="#/" onclick="openSlideMenu()">
-         <svg id="menIco" class="lines" width="30" height="30">
-          <path d="M0,5 30,5" stroke-width="5"/>
-          <path d="M0,14 30,14" stroke-width="5"/>
-          <path d="M0,23 30,23" stroke-width="5"/>
-         </svg>
+  <div class="main">
+    <div class="sidebar1"></div>
+    <div class="middle">
+      <div class="types1">
+        <a href="#" class="ch">
+          <img src="https://via.placeholder.com/300">
+          <h1>Camping<br />&<br /> Hunting</h1>
         </a>
-	      <svg id="logoMain" class="iniLogo" viewBox="0 0 146.74 135"><title>Logo_Main_blk</title><polygon points="0 73.97 63.95 73.97 64.07 56.48 36.07 56.48 67.84 0 45.38 0 0 73.97"/><polygon points="94.99 73.97 94.99 135 75.23 135 75.23 0 95.28 0 124.47 20.16 101.85 20.16 134.79 43.94 106.65 43.94 146.74 73.97 94.99 73.97"/></svg> 
-        <!--<h1>Lorem Ipsum Dolar</h1>-->
-      </span>
-    </div> 
-    
-    <div id="side-menu" class = "side-nav">
-        <a href="#/" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-        <a href="#">Home</a>
-        <hr>
-        <a href="#">Products</a>
-	      <hr>
-        <a href="#">Gallery</a>
-    </div> 
-    
-    <div class="hero-image">
-      <div class="hero-text">
-        <h1>Test</h1>
+        <a href="#" class="tac">
+          <img src="https://via.placeholder.com/300">
+          <h1>Tactical</h1>
+        </a>
       </div>
+      <div class="types2">
+      <a href="#" class="edc">
+        <img src="https://via.placeholder.com/300">
+        <h1>Every<br />Day<br /> Carry</h1>
+      </a>
+      <a href="#" class="cus">
+        <img src="https://via.placeholder.com/300">
+        <h1>Custom</h1>
+      </a>
     </div>
-    
-    <div class="main-container" id="mainBody">
-      <div>
-        <hr>
-      </div>
-      <div class="topRow">
-        <!--<h1>Test</h1>-->
-        <div class="camping">
-            <a href="#">
-                <div class="camp-image">
-                    <div class="camp-text">
-                    <h1>Camping</h1>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="Tactical">
-            <a href="#">
-                <div class="Tac-image">
-                    <div class="Tac-text">
-                    <h1>Tactical</h1>
-                    </div>
-                </div>
-            </a>
-        </div>
-      </div>
-      <div class="bottomRow">
-        <div class="EDC">
-            <a href="#">
-                <div class="EDC-image">
-                    <div class="EDC-text">
-                    <h1>Every Day Carry</h1>
-                    </div>
-                </div> 
-            </a>
-        </div>
-        <div class="Custom">
-            <a href="#">
-                <div class="Cus-image">
-                    <div class="Cus-text">
-                    <h1>Custom</h1>
-                    </div>
-                </div>
-            </a>
-        </div>
-      </div>
     </div>
-    
-    <div class="footer">
-        <hr>
-        <p>Lorem Ipsum Dolar Sit Amet!</p>
+    <div class="sidebar2">
     </div>
+  </div>
+  
+  <div class="footer">
+    <div class="foot-text">
+      <p>Lorem Ipsum</p>
+    </div>
+    <div class="foot-img">
+      <svg id="logoFoot" class="iniLogo2" viewBox="0 0 146.74 135"><title>Logo_Main_blk</title><polygon points="0 73.97 63.95 73.97 64.07 56.48 36.07 56.48 67.84 0 45.38 0 0 73.97"/><polygon points="94.99 73.97 94.99 135 75.23 135 75.23 0 95.28 0 124.47 20.16 101.85 20.16 134.79 43.94 106.65 43.94 146.74 73.97 94.99 73.97"/></svg>
+    </div>
+    <div class="foot-space">
+    </div>
+  </div>
+  
+  <script type="text/javascript" src="logic.js"></script>
 
-    <img id="lowerlogo" src="https://via.placeholder.com/50" height="50px"> 
 
-    <script type="text/javascript" src="logic.js"></script>
-
-  </body>
+</body>
 </html>
