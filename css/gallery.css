@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+
+.MainNav {
+	flex: .5;
+}
+
+.MainNav2 {
+	flex: .5;
+}
+
+.secondary-hero {
+	position: relative;
+	width: 100vw;
+	height: 30vh;
+	min-height: 300px;
+	display: flex;
+}
+
+.secondary-hero::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url("../images/green-leafed-trees-during-fog-time-167684.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	filter: brightness(80%);
+	border-bottom: 1rem solid rgba(38, 38, 38, 1);
+}
+
+.secondary-hero-content {
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	position: relative;
+	color: #fffff0;
+	text-align: Left;
+	vertical-align: bottom;
+	margin-left: 10vh;
+	justify-content: flex-start;
+	align-self: flex-end;
+}
+
+.secondary-hero-title {
+	flex: 1;
+	order: 1;
+	display: flex;
+	font-size: 3rem;
+	margin-bottom: 1rem;
+	text-transform: uppercase;
+	text-shadow: -2px 3px 3px rgba(38,38,38,0.60);
+	letter-spacing: .2vw;
+}
+
+.socialMedia {
+	justify-content: flex-end;
+}
+
+.socialMedia svg {
+	flex: 1;
+	height: 2rem;
+	width: 2rem;
+	fill: #fffff0;
+	margin-right: 2vw;
+}
+
+.gallery {
+	justify-content: center;
+	display: flex;
+	flex: 1 0 auto;
+	flex-wrap: wrap;
+	order: 1;
+	margin-top: 2rem;
+	margin-bottom: 25vh;
+}
+
+.gallery img{
+	display: flex;
+	flex: 1;
+	transition: 1.1s;
+	padding: 1rem;
+	max-height: 200px;
+	max-width: 200px;
+}
+
+.gallery img:hover {
+	filter: grayscale(90%);
+	transform: scale(1.1);
+}
+
+#navbar{position: absolute;}
+
+@media (max-width: 425px) {
+	.gallery img{max-width: 150px; padding: .3rem;}
+	.secondary-hero-title{font-size: 9vw;}
+	.secondary-hero-title{font-size: 6vh;}
+}
+
+@media (max-width: 375px) {
+	.gallery img{max-width: 125px; padding: .3rem;}
+}
+
+@media (max-width: 320px) {
+	.secondary-hero-title{font-size: 9vw;}
+	.gallery img{max-width: 115px; padding: .3rem;}
+	.secondary-hero-content {margin-left: 5vh;}
+}
+
+/* @media (max-width: 1000px) {
+	.gallery{flex: 2;}
+	.sidebar1{flex: .5;}
+	.sidebar2{flex: .5;}
+} */
+
+/* @media (max-width: 375px) {
+	.secondary-hero{height: 45vh;}
+	.secondary-hero-content{margin-left: 3rem;}
+	.secondary-hero-title{font-size: 2rem; margin-bottom: 0rem;}
+	.gallery{margin-bottom: 6vh;}
+	.gallery img{max-height: 125px; max-width: 125px;}
+	#navbar{position: absolute;}
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+	.secondary-hero{height: 75vh;}
+	.secondary-hero-content{margin-left: 3rem;}
+   }
+
+.media (max-width: 360px) {
+	.gallery img(max-height: 100px; max-width: 100px;)
+} */
