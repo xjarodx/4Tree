@@ -517,7 +517,7 @@ body {
 	.text h1, .text2 h1 {font-size: 5vh; margin-bottom: 2rem;}
 	.info1 img {align-self: center; margin-bottom: 3rem;}
 	.info2 {flex-direction: column; justify-content: center;}
-	.info2 img {align-self: center; margin-bottom: 3rem;}
+	.info2 img {align-self: center; margin-bottom: 3rem; margin-left: 0rem;}
 	.text h2, .text2 h2 {font-size: 3vh; line-height: 4vh;}
 }
 
