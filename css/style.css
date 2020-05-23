@@ -424,6 +424,7 @@ body {
 	justify-content: center;
 	text-align: right;
 	margin-right: 2vw;
+	margin-left: 10vw;
 }
 
 .text h1{
@@ -504,6 +505,8 @@ body {
 
 @media (max-width: 800px) {
 	#navbar{position: absolute;}
+	.info2 img{max-width: calc(100% - 35vw)}
+	.text{margin-left: 0;}
 }
 
 @media (max-width: 425px) {
@@ -512,14 +515,14 @@ body {
 	.nav-menu {display: flex;}
 	.spacer {display: none;}
 	.socialMedia{display: none;}
-	.hero-title{font-size: calc(6vh - 1vw); line-height: 10vh;}
+	.hero-title{font-size: calc(5vh - 1vw); line-height: 7vh;}
 	.info1 {flex-direction: column; justify-content: center;}
-	.text, .text2{text-align: center; margin-bottom: 2rem;}
+	.text, .text2{text-align: center; margin-bottom: 2rem; margin-left: none; margin-right: none;}
 	.text h1, .text2 h1 {font-size: 5vh; margin-bottom: 2rem;}
 	.info1 img {align-self: center; margin-bottom: 3rem; max-width: calc(100% - 1vw)}
 	.info2 {flex-direction: column; justify-content: center;}
 	.info2 img {align-self: center; margin-bottom: 3rem; margin-left: 0rem; max-width: calc(100% - 1vw)}
-	.text h2, .text2 h2 {font-size: 3vh; line-height: 4vh;}
+	.text h2, .text2 h2 {font-size: 3vh; line-height: 4vh; margin-bottom: 2vh;}
 }
 
 @media (max-width: 375px) {
@@ -527,7 +530,7 @@ body {
 }
 
 @media (max-width:360px){
-	.info2 img {max-width: 90%;}
+	.info2 img {max-width: calc(90% - 1vw);}
 }
 
 @media (max-width: 320px) {
