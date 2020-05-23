@@ -101,24 +101,3 @@
 @media (max-width: 375px) {
 	.secondary-hero-title{font-size: 9vw;}
 }
-
-/* @media (max-width: 375px) {
-	.secondary-hero{height: 45vh;}
-	.secondary-hero-content{margin-left: 3rem;}
-	.secondary-hero-title{font-size: 2rem; margin-bottom: 0rem;}
-    .bod{margin-bottom: 26vh;}
-    .bod h1{margin-bottom: 2vh;}
-    #navbar{position: absolute;}
-}
-
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) {
-	.secondary-hero{height: 75vh;}
-   }
-
-@media (max-width: 360px) {
-    .bod{margin-bottom: 21vh;}
-} */
