@@ -1,0 +1,157 @@
+
+@charset "utf-8";
+/* CSS Document */
+
+#navbar{position: absolute;}
+
+.MainNav {
+	flex: .5;
+}
+
+.MainNav2 {
+	flex: .5;
+}
+
+.secondary-hero {
+	position: relative;
+	width: 100vw;
+	min-height: 300px;
+	height: 30vh;
+	display: flex;
+}
+
+.secondary-hero::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url("../images/BackgroundPrime.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	filter: brightness(80%);
+	border-bottom: 1rem solid rgba(38, 38, 38, 1);
+}
+
+.secondary-hero-content {
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	position: relative;
+	color: #fffff0;
+	text-align: Left;
+	vertical-align: bottom;
+	justify-content: flex-start;
+	align-self: flex-end;
+}
+
+.secondary-hero-title {
+	flex: 2;
+	order: 1;
+	display: flex;
+	font-size: 3rem;
+	margin-bottom: 1rem;
+	margin-left: 10vh;
+	text-transform: uppercase;
+	text-shadow: -2px 3px 3px rgba(38,38,38,0.60);
+	letter-spacing: .2vw;
+}
+
+.socialMedia {
+	justify-content: flex-end;
+	flex: 1;
+}
+
+.socialMedia svg {
+	flex: 1;
+	height: 2rem;
+	width: 2rem;
+	fill: #fffff0;
+	margin-right: 2vw;
+}
+
+.info3 {
+    display: flex;
+    margin-top: 10vh;
+    margin-bottom: 44vh;
+    order: 2;
+    flex-direction: column;
+    align-content: center;
+		width: auto;
+}
+
+.info3 h1{
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+}
+
+.info3 h2 {
+    margin-left: 3rem;
+}
+
+.gallery {
+	justify-content: center;
+	display: flex;
+	flex: 1 0 auto;
+	flex-wrap: wrap;
+	order: 1;
+	margin-top: 2rem;
+	margin-bottom: 20vh;
+}
+
+.gallery img{
+	display: flex;
+	flex: 1;
+	transition: 1.1s;
+	padding: 1rem;
+	max-height: 200px;
+	max-width: 200px;
+}
+
+.gallery img:hover {
+	filter: grayscale(90%);
+	transform: scale(1.1);
+}
+
+.bod {
+    display: flex;
+		flex-grow: 1;
+    margin-top: 10vh;
+    margin-bottom: 46vh;
+    order: 2;
+    flex-direction: column;
+		align-content: center;
+		justify-content: center;
+}
+
+.bod h1 {
+	text-align: center;
+	flex: 1;
+	margin-left: 1rem;
+	margin-bottom: 3rem;
+	font-size: 1.5rem;
+}
+
+.bod h2 {
+	text-align: center;
+	flex: 1;
+	font-size: 1rem;
+	margin-left: 1rem;
+}
+
+@@media (max-width: 800px) {
+	.secondary-hero-title{font-size: 2rem;}
+}
+
+@media (max-width:425px){
+	.hero::before{	background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url("../images/BackgroundMobile.jpg");}
+	.gallery img{max-width: 150px; padding: .3rem;}
+	.secondary-hero-title{margin-left: 5vw; font-size: 2rem;}
+}
+
+@media (max-width: 320px) {
+	.info3 h1, .info3 h2{margin: 0;}
+}
+

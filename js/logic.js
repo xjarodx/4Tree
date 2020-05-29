@@ -18,7 +18,7 @@ var initMenu = document.getElementById("primeMenu");
 var stLogo = document.getElementById("logoMain");
 
 var body = document.getElementById("main-container");
-var bodyChange= body.offsetTop;
+var bodyChange= body.offsetTop - 10;
 
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
